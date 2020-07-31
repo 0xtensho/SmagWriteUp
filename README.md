@@ -34,7 +34,7 @@ Then I run the command on the webpage and tadaaa:<br>
 It's working ! Unfortunately, it's not displaying any output, even in the source code, so we cannot read flags.
 I tried to wget a php file from my machine, and the file is downloaded correctly by the machine but somehow I couldn't have access to it with my browser... <br>
 At this point I tried many reverse shells, but I was sending commands with burp, and they didn't worked because the url encoding wasn't correctly executed.<br>
-I tried again few hours later but I was sending my reverse sshells command from the website and after few minutes I remebered that the webserver was running php, so php should be installed on the machine. And it was : my reverse php shell worked !<br>
+I tried again few hours later but I was sending my reverse shells command from the website and after few minutes I remebered that the webserver was running php, so php should be installed on the machine. And it was : my reverse php shell worked !<br>
 ![Capture d’écran de 2020-07-31 19-11-31](https://user-images.githubusercontent.com/50116433/89054531-42884b80-d359-11ea-8237-04c09f3f4b4c.png)
 # User Flag
 So there is a user jake, but we cannot acces the flag in his home directory and we can't either read the .ssh folder.
