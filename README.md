@@ -20,7 +20,7 @@ You noticed that I used the .php extension, and the txt too ( I always, it's jus
 After finding /mail we can see a page saying the server is using mail2web software to displays mails on the page, but I didn't find anything with it in searchsploit :(<br>
 There is a .pcap file, after opening it in wireshark we can see an http request with a username and a password. Nice !
 I tried to use these in ssh but it didn't work.
-<br>
+<br><br>
 ![censored_stuff](https://user-images.githubusercontent.com/50116433/89052543-26cf7600-d356-11ea-8f2c-34e3d0ba5225.jpg)<br>
 <br>
 We also notice that the http request is going to development.smage.htb, and after adding it to my /etc/hosts files.
