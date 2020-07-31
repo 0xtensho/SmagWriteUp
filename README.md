@@ -14,7 +14,7 @@ I added smag.thm to /etc/hosts, but nothing changed.
 One thing you should do everytime you're on a webpage is checking the file extension. Here the index file is index.php
 The webserver is running php. 
 Let's run gobuster, since this is the only thing we can do now :
-![Capture d’écran de 2020-07-31 18-58-27](https://user-images.githubusercontent.com/50116433/89051347-68f7b800-d354-11ea-887f-5454af53f124.png)<br>
+![Capture d’écran de 2020-07-31 18-58-27](https://user-images.githubusercontent.com/50116433/89051347-68f7b800-d354-11ea-887f-5454af53f124.png)<br><br>
 
 You noticed that I used the .php extension, and the txt too ( I always, it's just in case )
 After finding /mail we can see a page saying the server is using mail2web software to displays mails on the page, but I didn't find anything with it in searchsploit :(<br>
@@ -26,9 +26,9 @@ Nice ! I tried to use these in ssh but it didn't work.
 We also notice that the http request is going to development.smag.htb, and after adding it to my /etc/hosts file,
 The domain development.swag.thm is redirecting to a login page where we can login with the credentials we found earlier.<br>
 There is an admin command pannel :
-![Capture d’écran de 2020-07-31 19-08-13](https://user-images.githubusercontent.com/50116433/89053375-65b1fb80-d357-11ea-80c1-3d531d7418f1.png)<br>
-I try to ping my machine, just to see if it works, I use tcpdump to listen for incoming ping request : 
-```sudo tcpdump -i tun0 icmp and icmp[icmptype]=icmp-echo```
+![Capture d’écran de 2020-07-31 19-08-13](https://user-images.githubusercontent.com/50116433/89053375-65b1fb80-d357-11ea-80c1-3d531d7418f1.png)<br><br>
+I try to ping my machine, just to see if it works, I use tcpdump to listen for incoming ping request : <br>
+```sudo tcpdump -i tun0 icmp and icmp[icmptype]=icmp-echo```<br>
 Then I run the command on the webpage and tadaaa:<br>
 ![Capture d’écran de 2020-07-31 19-08-33](https://user-images.githubusercontent.com/50116433/89053686-e40e9d80-d357-11ea-92fe-cfa5eb7c0dd5.png)<br><br>
 It's working ! Unfortunately, it's not displaying any output, even in the source code, so we cannot read flags.
