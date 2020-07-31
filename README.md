@@ -56,4 +56,5 @@ Before running linpeas always check sudo -l permissions :
 ![Capture d’écran de 2020-07-31 19-28-32](https://user-images.githubusercontent.com/50116433/89056720-c263e500-d35c-11ea-84fb-28f79a977a73.png)<br>
 There is a privesc with this on gtfobins ( even three ), the first one won't work because the machine isn't connected to internet, the second one may work but I'll try the third one because it fits on one line.<br>
 ![Capture d’écran de 2020-07-31 19-29-54](https://user-images.githubusercontent.com/50116433/89056972-2edee400-d35d-11ea-9660-564377550066.png)<br>
-And we are root ! Thanks you [JakeDoesSec](https://tryhackme.com/p/JakeDoesSec) for this very nice room !
+And we are root ! Thanks you [JakeDoesSec](https://tryhackme.com/p/JakeDoesSec) for this very nice room !<br>
+[TryHackMe](https://tryhackme.com)
