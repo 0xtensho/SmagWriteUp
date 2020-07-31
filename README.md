@@ -23,8 +23,8 @@ There is a .pcap file, after opening it in wireshark we can see an http request 
 ![censored_stuff](https://user-images.githubusercontent.com/50116433/89052543-26cf7600-d356-11ea-8f2c-34e3d0ba5225.jpg)<br>
 <br>
 Nice ! I tried to use these in ssh but it didn't work.
-We also notice that the http request is going to development.smag.htb, and after adding it to my /etc/hosts files.
-The domain development.swag.thm is redirecting to a login page where we can login with the credentials we found earlier.
+We also notice that the http request is going to development.smag.htb, and after adding it to my /etc/hosts file,
+The domain development.swag.thm is redirecting to a login page where we can login with the credentials we found earlier.<br>
 There is an admin command pannel :
 ![Capture d’écran de 2020-07-31 19-08-13](https://user-images.githubusercontent.com/50116433/89053375-65b1fb80-d357-11ea-80c1-3d531d7418f1.png)<br>
 I try to ping my machine, just to see if it works, I use tcpdump to listen for incoming ping request : 
